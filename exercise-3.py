@@ -1,4 +1,3 @@
-
 # exercise-03 Calculate Dog Years
 
 # Write the code that:
@@ -11,3 +10,14 @@
 #      The dog's age in dog years is xx
 
 # Hint:  Use the int() function to convert the string returned from input() into an integer
+
+
+
+dog_age = input("Enter dog's age in human years: ")
+
+if int(dog_age) > 2:
+    over_2 = (int(dog_age) - 2) * 7 + 20
+    print(f"The dog's age in dog years is {over_2}")
+else:
+    under_2 = int(dog_age) * 10
+    print(f"The dog's age in dog years is {under_2}")
