@@ -16,6 +16,11 @@ print("Enter the lengths of three side of a triangle:")
 side_a = input("a: ")
 side_b = input("b: ")
 side_c = input("c: ")
-equalateral = side_a == side_b == side_c
-scalene = side_a != side_b != side_c
-isosceles = (side_a == side_b and side_c)
+
+if side_a == side_b == side_c:
+    print(f"A triangle with sides of {side_a},{side_b},{side_c} is a equalateral triangle")
+elif side_a != side_b != side_c:
+    print(f"A triangle with sides of {side_a},{side_b},{side_c} is a scalene triangle")
+else:
+    print(f"A triangle with sides of {side_a},{side_b},{side_c} is a isosceles triangle")
+
