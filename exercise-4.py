@@ -12,15 +12,10 @@
 #      isosceles - two sides are the same length
 # 3. Print a message such as:
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
-
-print('Enter the lengths of a triangle in the next three prompts!')
-a = int(input('Enter side A: '))
-b = int(input('Enter side B: '))
-c = int(input('Enter side C: '))
-
-if a == b and b == c:
-    print(f"A triangle with sides of {a}, {b}, and {c} is an equalateral triangle")
-elif a != b and b != c and a != c:
-    print(f"A triangle with sidea of {a}, {b}, and {c} is an scalene triangle")
-else:
-    print(f"A triangle with sides of {a}, {b}, and {c} is an isosceles triangle")
+print("Enter the lengths of three side of a triangle:")
+side_a = input("a: ")
+side_b = input("b: ")
+side_c = input("c: ")
+equalateral = side_a == side_b == side_c
+scalene = side_a != side_b != side_c
+isosceles = (side_a == side_b and side_c)
